@@ -1,60 +1,241 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es-CO" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- FAVICONS -->
   <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
   <link rel="manifest" href="/Favicons/site.webmanifest">
   <link rel="shortcut icon" href="/Favicons/favicon.ico">
 
-  <title>Pahe Scale | Vende más y trabaja mejor · Web, Automatización, Analítica y Lean Six Sigma</title>
+  <!-- SEO PRIMARIO -->
+  <title>Pahe Scale | Web, WhatsApp, Power BI, Ads y Lean Six Sigma en LATAM</title>
   <meta name="description"
-    content="Soluciones tecnológicas para PyMEs, grandes empresas y marcas personales. Web de autor, WhatsApp automatizado, dashboards, Lean Six Sigma y formación con IA.">
-  <meta name="author" content="Pahe Scale">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+    content="Agencia tecnológica en Bogotá y LATAM. Webs que venden, WhatsApp automatizado, dashboards en Power BI, Google Ads y Lean Six Sigma. Desde $200K COP. Diagnóstico gratis.">
+  <meta name="keywords"
+    content="agencia tecnológica Colombia, desarrollo web Bogotá, automatización WhatsApp, Power BI LATAM, Lean Six Sigma Bogotá, Google Ads Colombia, chatbots WhatsApp, dashboards Power BI, marketing digital PyMEs, formación IA Colombia, web de autor restaurantes, marca personal digital, agencia digital LATAM, Pahe Scale">
+  <meta name="author" content="Pahe Scale — Erick Pacheco Hernández">
+  <meta name="creator" content="Pahe Scale">
+  <meta name="publisher" content="Pahe Scale">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow">
+  <meta name="language" content="Spanish">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="global">
+
+  <!-- CANONICAL & HREFLANG -->
   <link rel="canonical" href="https://pahescale.netlify.app/">
+  <link rel="alternate" hreflang="es-CO" href="https://pahescale.netlify.app/">
+  <link rel="alternate" hreflang="es" href="https://pahescale.netlify.app/">
+  <link rel="alternate" hreflang="x-default" href="https://pahescale.netlify.app/">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="preload" as="image" href="Pahe_Scale.png" fetchpriority="high">
-  <link rel="dns-prefetch" href="https://www.gstatic.com">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <!-- THEME COLOR -->
+  <meta name="theme-color" content="#F7F2EA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
 
+  <!-- MOBILE WEB APP -->
+  <meta name="application-name" content="Pahe Scale">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Pahe Scale">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="msapplication-TileColor" content="#09318D">
+
+  <!-- GEO TAGS -->
+  <meta name="geo.region" content="CO-DC">
+  <meta name="geo.placename" content="Bogotá, Colombia">
+  <meta name="geo.position" content="4.7110;-74.0721">
+  <meta name="ICBM" content="4.7110, -74.0721">
+
+  <!-- OPEN GRAPH -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pahe Scale">
   <meta property="og:url" content="https://pahescale.netlify.app/">
-  <meta property="og:title" content="Pahe Scale | Vende más y trabaja mejor">
+  <meta property="og:title" content="Pahe Scale | Web, WhatsApp, Power BI, Ads y Lean Six Sigma en LATAM">
   <meta property="og:description"
-    content="Web de autor, WhatsApp, dashboards y formación con IA. Para negocios y marcas personales.">
+    content="Agencia tecnológica en LATAM. Webs que venden, WhatsApp automatizado, dashboards en Power BI, Google Ads y Lean Six Sigma. Desde $200K COP.">
   <meta property="og:image" content="https://pahescale.netlify.app/Pahe_Scale.png">
+  <meta property="og:image:secure_url" content="https://pahescale.netlify.app/Pahe_Scale.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pahe Scale — Soluciones tecnológicas para PyMEs y empresas en LATAM">
   <meta property="og:locale" content="es_CO">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pahe Scale | Vende más y trabaja mejor">
-  <meta name="twitter:description" content="Soluciones tecnológicas para negocios y marcas personales.">
-  <meta name="twitter:image" content="https://pahescale.netlify.app/Pahe_Scale.png">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="es_MX">
 
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pahescale">
+  <meta name="twitter:creator" content="@pahescale">
+  <meta name="twitter:url" content="https://pahescale.netlify.app/">
+  <meta name="twitter:title" content="Pahe Scale | Web, WhatsApp, Power BI, Ads y Lean Six Sigma">
+  <meta name="twitter:description"
+    content="Agencia tecnológica en LATAM. Webs que venden, WhatsApp automatizado, dashboards Power BI, Google Ads y Lean Six Sigma.">
+  <meta name="twitter:image" content="https://pahescale.netlify.app/Pahe_Scale.png">
+  <meta name="twitter:image:alt" content="Pahe Scale — Soluciones tecnológicas para PyMEs en LATAM">
+  <meta name="twitter:label1" content="Fundado en">
+  <meta name="twitter:data1" content="Bogotá, Colombia">
+  <meta name="twitter:label2" content="Especialidad">
+  <meta name="twitter:data2" content="Web, Automatización, Datos, IA">
+
+  <!-- VERIFICACIONES -->
+  <meta name="google-site-verification" content="google378403ee62ed6473.html">
+  <meta name="msvalidate.01" content="REEMPLAZA_CON_TU_CODIGO_DE_BING">
+
+  <!-- PERFORMANCE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://wa.me">
+  <link rel="preload" as="image" href="Pahe_Scale.png" fetchpriority="high">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@600;700;800&display=swap">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+
+  <!-- SCHEMA.ORG COMPLETO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "WebSite", "@id": "https://pahescale.netlify.app/#website", "url": "https://pahescale.netlify.app/", "name": "Pahe Scale", "publisher": { "@id": "https://pahescale.netlify.app/#organization" } },
-      { "@type": "Organization", "@id": "https://pahescale.netlify.app/#organization", "name": "Pahe Scale", "url": "https://pahescale.netlify.app/", "logo": "https://pahescale.netlify.app/Pahe_Scale.png", "email": "pahe.scale@gmail.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" },
-        "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Rutas Pahe Scale", "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Impulsa: Marca personal" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estudio: Web de autor" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Despega: PyME digital" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crece: Medición y Ads" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Escala: IA y Lean Six Sigma" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aprende: Formación con IA (30 min · $200K)" } }
-        ]}
+      {
+        "@type": "WebSite",
+        "@id": "https://pahescale.netlify.app/#website",
+        "url": "https://pahescale.netlify.app/",
+        "name": "Pahe Scale",
+        "alternateName": "PaheScale",
+        "description": "Agencia de soluciones tecnológicas B2B en LATAM. Desarrollo web, automatización, analítica y optimización de procesos.",
+        "inLanguage": "es-CO",
+        "publisher": { "@id": "https://pahescale.netlify.app/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://pahescale.netlify.app/#webpage",
+        "url": "https://pahescale.netlify.app/",
+        "name": "Pahe Scale | Web, WhatsApp, Power BI, Ads y Lean Six Sigma en LATAM",
+        "isPartOf": { "@id": "https://pahescale.netlify.app/#website" },
+        "about": { "@id": "https://pahescale.netlify.app/#organization" },
+        "primaryImageOfPage": { "@id": "https://pahescale.netlify.app/#primaryimage" },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-11-13",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-title", ".hero-value", ".section-sub"]
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://pahescale.netlify.app/#primaryimage",
+        "url": "https://pahescale.netlify.app/Pahe_Scale.png",
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://pahescale.netlify.app/#organization",
+        "name": "Pahe Scale",
+        "legalName": "Pahe Scale",
+        "url": "https://pahescale.netlify.app/",
+        "logo": { "@type": "ImageObject", "url": "https://pahescale.netlify.app/Pahe_Scale.png", "width": 512, "height": 512 },
+        "image": "https://pahescale.netlify.app/Pahe_Scale.png",
+        "description": "Agencia colombiana de soluciones tecnológicas para PyMEs, medianas, grandes empresas y marcas personales en LATAM.",
+        "slogan": "Vende más y trabaja mejor",
+        "foundingDate": "2024",
+        "founder": { "@id": "https://pahescale.netlify.app/#founder" },
+        "email": "pahe.scale@gmail.com",
+        "telephone": "+57-311-258-1129",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressRegion": "Cundinamarca", "addressCountry": "CO" },
+        "areaServed": [
+          { "@type": "Country", "name": "Colombia" },
+          { "@type": "Country", "name": "México" },
+          { "@type": "Country", "name": "Argentina" },
+          { "@type": "Country", "name": "Chile" },
+          { "@type": "Country", "name": "Perú" },
+          { "@type": "Country", "name": "Ecuador" }
+        ],
+        "knowsLanguage": ["es-CO", "es", "en"],
+        "sameAs": [
+          "https://www.linkedin.com/company/pahescale",
+          "https://www.instagram.com/pahescale"
+        ],
+        "knowsAbout": [
+          "Desarrollo Web", "Web de Autor", "Landing Pages", "E-commerce",
+          "Automatización de WhatsApp", "WhatsApp Business API", "Chatbots con IA",
+          "Power BI", "DAX", "Google Cloud", "Power Automate",
+          "Google Ads", "Meta Ads", "TikTok Ads", "Performance Marketing",
+          "SEO Local", "Google Business Profile",
+          "Lean Six Sigma", "DMAIC", "Reingeniería de Procesos", "Mejora Continua",
+          "People Analytics", "Gestión de Postventa", "Academias Técnicas"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Rutas de servicio Pahe Scale",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Impulsa — Web personal y marca digital", "description": "Landing page personal, Google Business verificado, WhatsApp Business con chatbot, optimización de LinkedIn o Instagram para freelancers, consultores y profesionales de la salud.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "800000", "priceCurrency": "COP" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estudio — Web de autor para restaurantes y marcas culturales", "description": "Diseño web de autor con storytelling visual, dirección de arte y SEO local para restaurantes, hoteles boutique y marcas culturales.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "300000", "priceCurrency": "COP" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Despega — Motor de ventas digital para PyMEs", "description": "Landing page de conversión, WhatsApp Business API, chatbot 24/7, Google Business y reporte mensual para PyMEs de 5 a 50 empleados.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "1500000", "priceCurrency": "COP" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crece — Analítica y Ads para medianas empresas", "description": "Dashboard en Power BI, automatización de reportes, gestión de Meta Ads y Google Ads, atribución Ads → Web → CRM para empresas de 50 a 200 empleados.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "4500000", "priceCurrency": "COP" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Escala — Transformación enterprise con IA y Lean Six Sigma", "description": "IA multicanal, auditoría Lean Six Sigma, dashboard ejecutivo, academia interna y auditoría de seguridad para grandes empresas 200+ empleados.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "15000000", "priceCurrency": "COP" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aprende — Formación 1:1 para crear tu web con IA", "description": "Clases 1:1 de 30 min para crear o reconstruir tu web con IA. Incluye plantillas, dominio, hosting, chatbot y soporte 15 días.", "provider": { "@id": "https://pahescale.netlify.app/#organization" } }, "priceSpecification": { "@type": "PriceSpecification", "price": "200000", "priceCurrency": "COP" } }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://pahescale.netlify.app/#founder",
+        "name": "Erick Pacheco Hernández",
+        "jobTitle": "Fundador y Especialista en People Analytics",
+        "url": "https://erickpachecohernandez.netlify.app/",
+        "email": "erickpachecoh01@gmail.com",
+        "worksFor": { "@id": "https://pahescale.netlify.app/#organization" },
+        "sameAs": [
+          "https://www.linkedin.com/in/epachecoh/",
+          "https://erickpachecohernandez.netlify.app/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pahescale.netlify.app/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "¿Qué es Pahe Scale y a quién ayuda?", "acceptedAnswer": { "@type": "Answer", "text": "Pahe Scale es una agencia colombiana de soluciones tecnológicas B2B que ayuda a PyMEs, medianas empresas, grandes corporativos y marcas personales en LATAM a vender más, automatizar operaciones y tomar decisiones con datos. Ofrecemos seis rutas de servicio con precio cerrado." } },
+          { "@type": "Question", "name": "¿Cuánto cuesta un proyecto con Pahe Scale?", "acceptedAnswer": { "@type": "Answer", "text": "Desde $200.000 COP por clase de formación con IA (ruta Aprende) hasta $15.000.000 COP por transformación enterprise (ruta Escala). Cada ruta tiene alcance cerrado y plazos definidos: 21 días (Impulsa), 45 días (Estudio), 30 días (Despega), 90 días (Crece) y 6 meses (Escala)." } },
+          { "@type": "Question", "name": "¿Qué es Lean Six Sigma y cómo ayuda a mi empresa?", "acceptedAnswer": { "@type": "Answer", "text": "Lean Six Sigma combina Lean (eliminación de desperdicios) y Six Sigma (reducción de defectos). En Pahe Scale contamos con certificación Black Belt para aplicarla en tu operación, reduciendo costos y estandarizando la calidad." } },
+          { "@type": "Question", "name": "¿Cómo puedo automatizar mi WhatsApp para vender más?", "acceptedAnswer": { "@type": "Answer", "text": "Implementamos la API oficial de WhatsApp Business para crear respuestas automáticas, catálogos de productos, agendamiento de citas y un chatbot que atiende 24/7. Es parte central de las rutas Despega y Estudio." } },
+          { "@type": "Question", "name": "¿Trabajan solo en Colombia o en toda LATAM?", "acceptedAnswer": { "@type": "Answer", "text": "Pahe Scale está radicada en Bogotá, Colombia, pero atiende clientes en toda Latinoamérica: México, Argentina, Chile, Perú y Ecuador. Todos los proyectos se ejecutan en modalidad remota con acompañamiento personalizado." } },
+          { "@type": "Question", "name": "¿Cómo agendar el diagnóstico gratuito?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes agendar tu diagnóstico gratuito de 30 minutos por WhatsApp al +57 311 258 1129 o completando el formulario en https://pahescale.netlify.app/#contacto. Sin venta, sin compromiso, respondemos en menos de 24 horas hábiles." } }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://pahescale.netlify.app/#process",
+        "name": "Cómo trabajamos en Pahe Scale",
+        "description": "Proceso de 4 pasos con precio cerrado y plazos definidos.",
+        "totalTime": "P90D",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Diagnóstico gratuito", "text": "30 minutos con nuestro equipo para mapear datos, procesos y cuellos de botella. Sales con un plan de acción claro y tiempos estimados de ejecución." },
+          { "@type": "HowToStep", "position": 2, "name": "Propuesta cerrada", "text": "Alcance, entregables, precio fijo y cronograma. Si no hay fit, te derivamos a alguien que sí pueda ayudarte." },
+          { "@type": "HowToStep", "position": 3, "name": "Implementación ágil", "text": "Entregas cada 2 semanas. Ves avance real, no promesas. Ajustamos sobre la marcha con tu feedback directo." },
+          { "@type": "HowToStep", "position": 4, "name": "Handoff y soporte", "text": "Te dejamos el sistema funcionando, documentado y con capacitación. Soporte los primeros 3 meses incluido sin costo extra." }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://pahescale.netlify.app/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://pahescale.netlify.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Rutas", "item": "https://pahescale.netlify.app/#soluciones" },
+          { "@type": "ListItem", "position": 3, "name": "Cómo trabajamos", "item": "https://pahescale.netlify.app/#como-trabajamos" },
+          { "@type": "ListItem", "position": 4, "name": "Contacto", "item": "https://pahescale.netlify.app/#contacto" }
+        ]
       }
     ]
   }
@@ -65,7 +246,6 @@
       try {
         var saved = localStorage.getItem('theme');
         if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
-        else document.documentElement.setAttribute('data-theme', 'light');
       } catch (e) { }
     })();
   </script>
@@ -221,26 +401,20 @@
       z-index: 0;
     }
 
-    /* ============ LUXURY TITLES ============ */
     .luxury-title {
       position: relative;
       color: var(--text-strong);
       display: inline-block;
     }
 
-    .luxury-title .lux-word {
-      position: relative;
-      display: inline-block;
-    }
-
-    .luxury-title .lux-word::after {
+    .luxury-title::after {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(110deg, transparent 0%, transparent 35%, rgba(255, 255, 255, 0.95) 48%, rgba(255, 255, 255, 0.5) 52%, transparent 65%, transparent 100%);
+      background: linear-gradient(110deg, transparent 0%, transparent 35%, rgba(255, 255, 255, 0.9) 48%, rgba(255, 255, 255, 0.4) 52%, transparent 65%, transparent 100%);
       background-size: 300% 100%;
       background-position: 100% 0;
       -webkit-background-clip: text;
@@ -248,7 +422,6 @@
       -webkit-text-fill-color: transparent;
       animation: luxShimmer 6s ease-in-out infinite;
       pointer-events: none;
-      mix-blend-mode: overlay;
     }
 
     @keyframes luxShimmer {
@@ -272,35 +445,6 @@
       }
     }
 
-    .luxury-title::before {
-      content: '✦';
-      position: absolute;
-      top: -0.3em;
-      left: -1em;
-      font-size: 0.35em;
-      color: var(--accent);
-      opacity: 0;
-      animation: sparkleTwinkle 5s ease-in-out infinite;
-      pointer-events: none;
-    }
-
-    @keyframes sparkleTwinkle {
-
-      0%,
-      40%,
-      100% {
-        opacity: 0;
-        transform: scale(0.5) rotate(0deg);
-      }
-
-      50%,
-      70% {
-        opacity: 0.9;
-        transform: scale(1) rotate(180deg);
-      }
-    }
-
-    /* ============ MAGIC SPARKLES ============ */
     .magic-sparkle {
       position: fixed;
       width: 8px;
@@ -311,17 +455,6 @@
       background: radial-gradient(circle, #ffffff 0%, var(--sparkle-color) 40%, transparent 90%);
       box-shadow: 0 0 8px var(--sparkle-color), 0 0 15px rgba(255, 255, 255, 0.6);
       animation: sparkleBurst 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-
-    .magic-sparkle.star::before {
-      content: '✦';
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 10px;
     }
 
     @keyframes sparkleBurst {
@@ -336,7 +469,6 @@
       }
     }
 
-    /* ============ NAV ============ */
     .nav {
       position: fixed;
       top: 0;
@@ -389,13 +521,6 @@
       white-space: nowrap;
       text-transform: uppercase;
       letter-spacing: 2px;
-      cursor: pointer;
-      position: relative;
-      transition: transform 0.2s;
-    }
-
-    .nav-brand:hover {
-      transform: scale(1.04);
     }
 
     .nav-links {
@@ -582,7 +707,6 @@
       color: var(--accent);
     }
 
-    /* ============ HERO ============ */
     .hero {
       min-height: 92vh;
       padding: calc(var(--nav-h) + 60px) 24px 60px;
@@ -676,6 +800,7 @@
       border: 2px solid var(--accent);
       min-height: 48px;
       justify-content: center;
+      cursor: pointer;
     }
 
     .btn-primary:hover {
@@ -699,6 +824,7 @@
       gap: 8px;
       min-height: 48px;
       justify-content: center;
+      cursor: pointer;
     }
 
     .btn-ghost:hover {
@@ -757,14 +883,14 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      object-fit: cover;
+      object-fit: contain;
       border: 5px solid var(--surface);
       z-index: 1;
       box-shadow: 0 20px 60px rgba(9, 49, 141, 0.15);
       background: var(--surface);
+      padding: 20px;
     }
 
-    /* ============ SECTIONS ============ */
     section {
       padding: 90px 24px;
       position: relative;
@@ -799,7 +925,6 @@
       font-weight: 500;
     }
 
-    /* ============ NOSOTROS + SKILLS ============ */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -920,7 +1045,6 @@
       padding: 0 4px;
     }
 
-    /* ============ RESOLUCIONES (faster) ============ */
     .resolutions-belt {
       margin-top: 40px;
       position: relative;
@@ -984,7 +1108,6 @@
       color: var(--accent-contrast);
     }
 
-    /* ============ RUTAS CARRUSEL ============ */
     .routes-carousel {
       position: relative;
       margin-bottom: 56px;
@@ -1288,13 +1411,13 @@
       }
     }
 
-    /* ============ TABLA COMPARATIVA ============ */
     .compare-wrapper {
       overflow-x: auto;
       border: 2px solid var(--border);
       border-radius: 16px;
       background: var(--surface);
       margin-top: 24px;
+      -webkit-overflow-scrolling: touch;
     }
 
     .compare-table {
@@ -1351,7 +1474,6 @@
       font-size: 0.82rem;
     }
 
-    /* ============ FLIP CARDS ============ */
     .process-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1414,6 +1536,8 @@
     .flip-back h3 {
       color: var(--accent-contrast);
       margin-bottom: 12px;
+      font-size: 1.1rem;
+      font-weight: 800;
     }
 
     .flip-back p {
@@ -1442,13 +1566,6 @@
       font-weight: 700;
     }
 
-    .process-step h3 {
-      font-size: 1.1rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    /* ============ CART FLOAT ============ */
     .cart-float {
       position: fixed;
       bottom: 24px;
@@ -1491,7 +1608,6 @@
       font-size: 0.8rem;
     }
 
-    /* ============ CONTACTO ============ */
     .agenda-card {
       background: var(--surface);
       border: 2px solid var(--accent);
@@ -1542,6 +1658,12 @@
     .form-row select:focus {
       outline: none;
       border-color: var(--accent);
+    }
+
+    .form-row input.invalid,
+    .form-row select.invalid {
+      border-color: #c0392b;
+      background: rgba(192, 57, 43, 0.05);
     }
 
     .consent {
@@ -1596,7 +1718,11 @@
       color: var(--accent);
     }
 
-    /* CHAT */
+    .form-success a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
     .contact-card {
       background: var(--surface);
       border: 2px solid var(--border);
@@ -1827,7 +1953,6 @@
       cursor: pointer;
     }
 
-    /* ============ FOOTER ============ */
     footer {
       padding: 40px 24px;
       border-top: 2px solid var(--border);
@@ -1877,7 +2002,6 @@
       color: var(--accent);
     }
 
-    /* ============ MODALES ============ */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -1934,6 +2058,7 @@
       justify-content: center;
       cursor: pointer;
       z-index: 1;
+      font-size: 1rem;
     }
 
     .modal-close:hover {
@@ -1970,7 +2095,6 @@
       margin-bottom: 16px;
     }
 
-    /* CART MODAL */
     .cart-items {
       margin: 20px 0;
     }
@@ -2240,36 +2364,37 @@
   <nav class="nav" id="mainNav" aria-label="Navegación principal">
     <canvas id="navMatrix" class="nav-matrix" aria-hidden="true"></canvas>
     <div class="nav-inner">
-      <a href="#hero" class="nav-brand" id="navBrand" aria-label="Inicio">Pahe Scale</a>
+      <a href="#hero" class="nav-brand" id="navBrand" aria-label="Pahe Scale — Inicio">Pahe Scale</a>
       <div class="nav-links">
         <a href="#soluciones">Rutas</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div class="nav-actions">
-        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú"
-          aria-expanded="false">
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación"
+          aria-expanded="false" aria-controls="mobileMenu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
-        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" aria-pressed="false">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro u oscuro"
+          aria-pressed="false">
           <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4" />
             <path
               d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
           </svg>
           <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
         </button>
         <a href="#agenda" class="btn-nav-contact" data-cta="nav-primary">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
             <line x1="16" y1="2" x2="16" y2="6" />
             <line x1="8" y1="2" x2="8" y2="6" />
@@ -2281,10 +2406,10 @@
     </div>
   </nav>
 
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación móvil">
     <button type="button" class="mobile-menu-close" id="mobileMenuClose" aria-label="Cerrar menú">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <line x1="18" y1="6" x2="6" y2="18" />
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
@@ -2295,8 +2420,9 @@
     </div>
   </div>
 
-  <button type="button" class="cart-float" id="cartFloat" aria-label="Ver mi paquete">
-    <span>🛒 Mi paquete</span>
+  <button type="button" class="cart-float" id="cartFloat" aria-label="Ver mi paquete personalizado">
+    <span aria-hidden="true">🛒</span>
+    <span>Mi paquete</span>
     <span class="cart-count" id="cartCount">0</span>
   </button>
 
@@ -2304,7 +2430,7 @@
     <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="hero-eyebrow fade-up d1">Para emprendedores, PyMEs, grandes empresas y marcas personales</p>
+          <p class="hero-eyebrow fade-up d1">Agencia tecnológica en LATAM · Web · WhatsApp · Ads · Datos · IA</p>
           <h1 id="hero-title" class="hero-title fade-up d1 luxury-title">Hacemos que tu negocio venda más y trabaje
             mejor.</h1>
           <p class="hero-value fade-up d2">
@@ -2319,8 +2445,9 @@
           </div>
         </div>
         <div class="hero-photo-wrap fade-up d2">
-          <img src="Pahe_Scale.png" alt="Pahe Scale — soluciones tecnológicas" class="hero-photo" width="320"
-            height="320" fetchpriority="high" decoding="async" style="object-fit: contain; padding: 20px;">
+          <img src="Pahe_Scale.png"
+            alt="Pahe Scale — Agencia tecnológica de soluciones web, automatización, datos e IA para PyMEs y empresas en LATAM"
+            class="hero-photo" width="320" height="320" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -2382,7 +2509,7 @@
             ya sabemos por dónde empezar.</p>
         </div>
       </div>
-      <div class="resolutions-belt">
+      <div class="resolutions-belt" aria-hidden="true">
         <div class="resolutions-track" id="resolutionsTrack">
           <span class="resolution-chip"><span class="chip-cat">Ventas</span>Mi web no vende, solo existe</span>
           <span class="resolution-chip"><span class="chip-cat">Ventas</span>Pierdo clientes por no contestar WhatsApp a
@@ -2433,7 +2560,7 @@
 
             <article class="route-card impulsa" data-route-id="impulsa" data-route-name="Impulsa"
               data-route-price="800000">
-              <div class="route-icon">✨</div>
+              <div class="route-icon" aria-hidden="true">✨</div>
               <span class="route-badge">Marca Personal</span>
               <h3 class="route-title">Impulsa</h3>
               <p class="route-for">Para profesionales, freelancers, consultores, personal de salud y emprendedores que
@@ -2459,7 +2586,7 @@
 
             <article class="route-card estudio" data-route-id="estudio" data-route-name="Estudio"
               data-route-price="300000">
-              <div class="route-icon">🎨</div>
+              <div class="route-icon" aria-hidden="true">🎨</div>
               <span class="route-badge">Web de Autor</span>
               <h3 class="route-title">Estudio</h3>
               <p class="route-for">Para restaurantes, hoteles boutique, marcas culturales y negocios que quieren una web
@@ -2485,7 +2612,7 @@
 
             <article class="route-card despega" data-route-id="despega" data-route-name="Despega"
               data-route-price="1500000">
-              <div class="route-icon">🚀</div>
+              <div class="route-icon" aria-hidden="true">🚀</div>
               <span class="route-badge">Etapa 01 · PyME</span>
               <h3 class="route-title">Despega</h3>
               <p class="route-for">Para PyMEs de 5 a 50 empleados que venden por WhatsApp/Instagram pero aún no tienen
@@ -2510,7 +2637,7 @@
             </article>
 
             <article class="route-card crece" data-route-id="crece" data-route-name="Crece" data-route-price="4500000">
-              <div class="route-icon">📈</div>
+              <div class="route-icon" aria-hidden="true">📈</div>
               <span class="route-badge">Etapa 02 · Mediana</span>
               <h3 class="route-title">Crece</h3>
               <p class="route-for">Para medianas empresas de 50 a 200 empleados que ya venden pero no miden. Reportes a
@@ -2536,7 +2663,7 @@
 
             <article class="route-card escala" data-route-id="escala" data-route-name="Escala"
               data-route-price="15000000">
-              <div class="route-icon">🏆</div>
+              <div class="route-icon" aria-hidden="true">🏆</div>
               <span class="route-badge">Etapa 03 · Grande</span>
               <h3 class="route-title">Escala</h3>
               <p class="route-for">Para grandes empresas (200+ empleados) que buscan eficiencia operativa, IA multicanal
@@ -2562,7 +2689,7 @@
 
             <article class="route-card aprende" data-route-id="aprende" data-route-name="Aprende"
               data-route-price="200000">
-              <div class="route-icon">🎓</div>
+              <div class="route-icon" aria-hidden="true">🎓</div>
               <span class="route-badge">Formación con IA</span>
               <h3 class="route-title">Aprende</h3>
               <p class="route-for">Para personas que quieren crear su propia web con IA desde cero, o mejorar la que ya
@@ -2591,16 +2718,16 @@
         </div>
 
         <div class="compare-wrapper">
-          <table class="compare-table" aria-label="Comparativa de rutas">
+          <table class="compare-table" aria-label="Comparativa de rutas de servicio">
             <thead>
               <tr>
-                <th>Característica</th>
-                <th>✨ Impulsa</th>
-                <th>🎨 Estudio</th>
-                <th>🚀 Despega</th>
-                <th>📈 Crece</th>
-                <th>🏆 Escala</th>
-                <th>🎓 Aprende</th>
+                <th scope="col">Característica</th>
+                <th scope="col">✨ Impulsa</th>
+                <th scope="col">🎨 Estudio</th>
+                <th scope="col">🚀 Despega</th>
+                <th scope="col">📈 Crece</th>
+                <th scope="col">🏆 Escala</th>
+                <th scope="col">🎓 Aprende</th>
               </tr>
             </thead>
             <tbody>
@@ -2782,36 +2909,36 @@
               <strong>&lt;24h hábiles</strong>.</p>
           </div>
 
-          <form id="leadForm" action="/api/lead" method="POST" novalidate>
+          <form id="leadForm" novalidate>
             <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px"
               aria-hidden="true">
             <div class="form-row"><label for="lead-name">Nombre completo</label><input id="lead-name" name="name"
-                type="text" autocomplete="name" required placeholder="Ej: María Restrepo"></div>
+                type="text" autocomplete="name" required placeholder="Ej: María Restrepo" aria-required="true"></div>
             <div class="form-row"><label for="lead-email">Correo corporativo</label><input id="lead-email" name="email"
-                type="email" inputmode="email" autocomplete="email" required placeholder="maria@empresa.com"></div>
+                type="email" inputmode="email" autocomplete="email" required placeholder="maria@empresa.com"
+                aria-required="true"></div>
             <div class="form-row"><label for="lead-company">Empresa / Marca personal</label><input id="lead-company"
                 name="company" type="text" autocomplete="organization" required
-                placeholder="Nombre de tu empresa o marca"></div>
+                placeholder="Nombre de tu empresa o marca" aria-required="true"></div>
             <div class="form-row">
               <label for="lead-need">¿Qué ruta te interesa?</label>
-              <select id="lead-need" name="need" required>
+              <select id="lead-need" name="need" required aria-required="true">
                 <option value="">Selecciona una opción</option>
                 <option value="impulsa">✨ Impulsa — Marca personal</option>
                 <option value="estudio">🎨 Estudio — Web de autor</option>
-                <option value="despega">🚀 Despega — PyME que quiere vender online</option>
-                <option value="crece">📈 Crece — Mediana que quiere medir y escalar</option>
-                <option value="escala">🏆 Escala — Grande con IA + Lean Six Sigma</option>
+                <option value="despega">🚀 Despega — PyME</option>
+                <option value="crece">📈 Crece — Mediana</option>
+                <option value="escala">🏆 Escala — Grande</option>
                 <option value="aprende">🎓 Aprende — Formación con IA (30 min · $200K)</option>
                 <option value="other">Otro / Aún no lo sé</option>
               </select>
             </div>
             <label class="consent">
-              <input type="checkbox" name="consent" id="formConsent" required>
+              <input type="checkbox" name="consent" id="formConsent" required aria-required="true">
               Acepto la <a onclick="openModal('modal-privacidad')">política de tratamiento de datos</a> (Ley 1581 de
               2012).
             </label>
-            <button type="submit" class="btn-primary" data-cta="form-submit" style="width:100%;">Solicitar diagnóstico
-              →</button>
+            <button type="submit" class="btn-primary" style="width:100%;">Enviar por WhatsApp →</button>
             <p class="form-microcopy" style="margin-top:12px; text-align:center;">¿Prefieres chatear? <a
                 href="#chat-option" id="toggleChatLink" style="color:var(--accent);text-decoration:underline;">Habla con
                 nuestro asistente virtual</a>.</p>
@@ -2831,13 +2958,13 @@
                 <h3>Asistente Pahe Scale</h3>
                 <p>Tu consultor en línea</p>
               </div>
-              <div class="chat-timer" id="chatTimer">⏱ 20:00</div>
+              <div class="chat-timer" id="chatTimer" aria-live="polite">⏱ 20:00</div>
             </div>
-            <div class="chat-window" id="chatWindow"></div>
+            <div class="chat-window" id="chatWindow" aria-live="polite" aria-atomic="false"></div>
             <div class="chat-input-area">
               <input type="text" class="chat-input" id="chatInput" placeholder="Escribe tu mensaje..."
                 aria-label="Mensaje para el asistente" autocomplete="off">
-              <button type="button" class="chat-send" id="chatSend">Enviar</button>
+              <button type="button" class="chat-send" id="chatSend" aria-label="Enviar mensaje">Enviar</button>
             </div>
             <div class="chat-consent" id="chatConsentBox">
               <label><input type="checkbox" id="chatConsent"> Acepto el tratamiento de mis datos personales (Ley 1581 de
@@ -2852,9 +2979,9 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-links">
-        <a onclick="openModal('modal-privacidad')">Política de Privacidad</a>
-        <a onclick="openModal('modal-terminos')">Términos y Condiciones</a>
-        <a onclick="openModal('modal-cookies')">Política de Cookies</a>
+        <a onclick="openModal('modal-privacidad')" role="button" tabindex="0">Política de Privacidad</a>
+        <a onclick="openModal('modal-terminos')" role="button" tabindex="0">Términos y Condiciones</a>
+        <a onclick="openModal('modal-cookies')" role="button" tabindex="0">Política de Cookies</a>
       </div>
       <div class="footer-bottom">
         <span>© <span id="year"></span> Pahe Scale</span><span>·</span><span>LATAM</span><span>·</span><span>Data ·
@@ -2863,10 +2990,10 @@
     </div>
   </footer>
 
-  <div class="modal-overlay" id="modal-privacidad">
+  <div class="modal-overlay" id="modal-privacidad" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('modal-privacidad')" aria-label="Cerrar">✕</button>
-      <h2>Política de Privacidad</h2>
+      <h2 id="privacy-title">Política de Privacidad</h2>
       <p><strong>Última actualización:</strong> Noviembre de 2026</p>
       <p>En <strong>Pahe Scale</strong> valoramos tu privacidad, en cumplimiento de la <strong>Ley 1581 de
           2012</strong>.</p>
@@ -2885,10 +3012,10 @@
       <p>Escríbenos a <strong>pahe.scale@gmail.com</strong> o presenta queja ante la SIC.</p>
     </div>
   </div>
-  <div class="modal-overlay" id="modal-terminos">
+  <div class="modal-overlay" id="modal-terminos" role="dialog" aria-modal="true" aria-labelledby="terms-title">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('modal-terminos')" aria-label="Cerrar">✕</button>
-      <h2>Términos y Condiciones</h2>
+      <h2 id="terms-title">Términos y Condiciones</h2>
       <p><strong>Última actualización:</strong> Noviembre de 2026</p>
       <p>El uso de este sitio implica aceptar estos términos. Precios y alcances están sujetos a propuesta formal. Los
         puntos acumulados son canjeables por servicios de Pahe Scale y no son transferibles ni reembolsables en
@@ -2899,20 +3026,20 @@
       <p>Los resultados dependen de múltiples factores internos de cada empresa.</p>
     </div>
   </div>
-  <div class="modal-overlay" id="modal-cookies">
+  <div class="modal-overlay" id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="cookies-title">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('modal-cookies')" aria-label="Cerrar">✕</button>
-      <h2>Política de Cookies</h2>
+      <h2 id="cookies-title">Política de Cookies</h2>
       <p>Usamos cookies técnicas (localStorage para tema y carrito) y cookies de Google Fonts.</p>
       <h3>Cómo desactivarlas</h3>
       <p>Puedes configurar tu navegador para rechazar cookies, aunque algunas funciones no operarán.</p>
     </div>
   </div>
 
-  <div class="modal-overlay" id="modal-cart">
+  <div class="modal-overlay" id="modal-cart" role="dialog" aria-modal="true" aria-labelledby="cart-title">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('modal-cart')" aria-label="Cerrar">✕</button>
-      <h2>Mi paquete personalizado</h2>
+      <h2 id="cart-title">Mi paquete personalizado</h2>
       <p>Combina servicios como quieras. Los <strong>paquetes completos</strong> (Impulsa, Estudio, Despega, Crece,
         Escala, Aprende) tienen descuento implícito y son la opción recomendada.</p>
       <div class="cart-items" id="cartItems"></div>
@@ -2921,7 +3048,7 @@
       <div class="cart-points" style="background: var(--surface-2);"><span>🏅 Puntos disponibles
           (histórico)</span><strong id="cartPointsAvailable">0 pts</strong></div>
       <div class="cart-actions">
-        <button type="button" class="btn-primary" style="flex:1;" id="cartCheckout">Solicitar propuesta →</button>
+        <button type="button" class="btn-primary" style="flex:1;" id="cartCheckout">Enviar a WhatsApp →</button>
         <button type="button" class="btn-ghost" id="cartClear">Vaciar</button>
       </div>
     </div>
@@ -2929,6 +3056,7 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const WA_NUMBER = '573112581129';
 
     /* ============ SPARKLES ============ */
     function spawnSparkles(el, count = 14) {
@@ -2937,7 +3065,7 @@
       const rect = el.getBoundingClientRect();
       for (let i = 0; i < count; i++) {
         const sparkle = document.createElement('div');
-        sparkle.className = 'magic-sparkle' + (Math.random() > 0.6 ? ' star' : '');
+        sparkle.className = 'magic-sparkle';
         sparkle.style.left = (rect.left + Math.random() * rect.width) + 'px';
         sparkle.style.top = (rect.top + Math.random() * rect.height) + 'px';
         const angle = Math.random() * Math.PI * 2;
@@ -2951,20 +3079,40 @@
     }
 
     /* ============ MODALES ============ */
-    function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
-    function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
-    document.querySelectorAll('.modal-overlay').forEach(o => o.addEventListener('click', e => { if (e.target === o) closeModal(o.id); }));
+    function openModal(id) {
+      const m = document.getElementById(id);
+      if (!m) return;
+      m.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      const firstBtn = m.querySelector('button, a');
+      if (firstBtn) setTimeout(() => firstBtn.focus(), 50);
+    }
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      if (!m) return;
+      m.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.modal-overlay').forEach(o => {
+      o.addEventListener('click', e => { if (e.target === o) closeModal(o.id); });
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(m => closeModal(m.id));
+        const mm = document.getElementById('mobileMenu');
+        if (mm && mm.classList.contains('active')) { mm.classList.remove('active'); document.getElementById('mobileMenuToggle').setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+      }
+    });
 
     /* ============ MOBILE MENU ============ */
     (function () {
       const m = document.getElementById('mobileMenu');
       const t = document.getElementById('mobileMenuToggle');
       const c = document.getElementById('mobileMenuClose');
-      if (m && t && c) {
-        t.addEventListener('click', () => { m.classList.add('active'); t.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; });
-        c.addEventListener('click', () => { m.classList.remove('active'); t.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; });
-        m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.remove('active'); t.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }));
-      }
+      if (!m || !t || !c) return;
+      t.addEventListener('click', () => { m.classList.add('active'); t.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; });
+      c.addEventListener('click', () => { m.classList.remove('active'); t.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; });
+      m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.remove('active'); t.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }));
     })();
 
     /* ============ NAV AUTO-HIDE ============ */
@@ -2972,6 +3120,7 @@
       if (window.innerWidth > 768) return;
       let lastY = 0, ticking = false;
       const nav = document.getElementById('mainNav');
+      if (!nav) return;
       window.addEventListener('scroll', () => {
         if (ticking) return;
         ticking = true;
@@ -2988,15 +3137,15 @@
     (function () {
       const root = document.documentElement;
       const btn = document.getElementById('themeToggle');
+      if (!btn) return;
       function cur() { return root.getAttribute('data-theme') || 'light'; }
       function apply(t) { root.setAttribute('data-theme', t); try { localStorage.setItem('theme', t); } catch (e) { } btn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false'); }
       btn.setAttribute('aria-pressed', cur() === 'dark' ? 'true' : 'false');
       btn.addEventListener('click', () => apply(cur() === 'dark' ? 'light' : 'dark'));
     })();
 
-    /* ============ SPARKLES EN TÍTULOS (HOVER + VIEWPORT) ============ */
+    /* ============ SPARKLES EN TÍTULOS ============ */
     (function () {
-      // Hover sparkles en títulos luxury y section-title
       document.querySelectorAll('.luxury-title, .section-title').forEach(title => {
         let lastSpark = 0;
         title.addEventListener('mouseenter', () => spawnSparkles(title, 12));
@@ -3005,8 +3154,6 @@
           if (now - lastSpark > 280) { spawnSparkles(title, 3); lastSpark = now; }
         });
       });
-
-      // Sparkle al entrar al viewport (una vez por título)
       const io = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && !entry.target.dataset.sparkled) {
@@ -3016,17 +3163,8 @@
         });
       }, { threshold: 0.4 });
       document.querySelectorAll('.section-title.luxury-title').forEach(t => io.observe(t));
-
-      // Sparkle en nav brand al hover
       const brand = document.getElementById('navBrand');
-      if (brand) {
-        brand.addEventListener('mouseenter', () => spawnSparkles(brand, 10));
-      }
-
-      // Sparkle en CTAs principales al hover
-      document.querySelectorAll('.btn-primary, .btn-nav-contact, .route-cta').forEach(btn => {
-        btn.addEventListener('mouseenter', () => spawnSparkles(btn, 8));
-      });
+      if (brand) brand.addEventListener('mouseenter', () => spawnSparkles(brand, 10));
     })();
 
     /* ============ SKILLS HOVER SPARKLES ============ */
@@ -3057,8 +3195,6 @@
       originals.forEach(card => {
         const clone = card.cloneNode(true);
         clone.setAttribute('aria-hidden', 'true');
-        clone.querySelectorAll('[data-service],[data-add-to-cart]').forEach(el => { el.removeAttribute('data-service'); el.removeAttribute('data-add-to-cart'); el.classList.remove('added'); });
-        clone.removeAttribute('data-route-id');
         track.appendChild(clone);
       });
       const SPEED = 1.2, PAUSE_MS = 1250, CARD_W = 340;
@@ -3088,7 +3224,7 @@
       if (!reduce) requestAnimationFrame(tick);
     })();
 
-    /* ============ RESOLUCIONES CONVEYOR (más rápido: 0.85) ============ */
+    /* ============ RESOLUCIONES CONVEYOR ============ */
     (function () {
       const track = document.getElementById('resolutionsTrack');
       if (!track) return;
@@ -3099,7 +3235,7 @@
         clone.setAttribute('aria-hidden', 'true');
         track.appendChild(clone);
       });
-      const SPEED = 0.85; // ⬆️ antes 0.55 → ahora 55% más rápido
+      const SPEED = 0.85;
       let paused = false, resumeT = null, last = performance.now();
       function half() { return track.scrollWidth / 2; }
       function tick(now) {
@@ -3122,7 +3258,7 @@
       if (!reduce) requestAnimationFrame(tick);
     })();
 
-    /* ============ CARRITO + PUNTOS ============ */
+    /* ============ CARRITO + PUNTOS (event delegation) ============ */
     (function () {
       const cart = JSON.parse(localStorage.getItem('pahe_cart') || '[]');
       const pointsHistory = parseFloat(localStorage.getItem('pahe_points_history') || '0');
@@ -3132,6 +3268,7 @@
       const cartTotalEl = document.getElementById('cartTotal');
       const cartPointsEl = document.getElementById('cartPoints');
       const cartPointsAvailEl = document.getElementById('cartPointsAvailable');
+      if (!cartFloat) return;
 
       function fmt(n) { return '$' + n.toLocaleString('es-CO') + ' COP'; }
       function calcTotal() { return cart.reduce((s, i) => s + i.price, 0); }
@@ -3140,66 +3277,149 @@
       function render() {
         cartCount.textContent = cart.length;
         cartFloat.classList.toggle('visible', cart.length > 0);
+        if (!cartItemsEl) return;
         if (!cart.length) cartItemsEl.innerHTML = '<p style="text-align:center; color: var(--text-muted); padding: 20px;">Aún no has añadido servicios. Explora las rutas y toca «+ Añadir a mi paquete».</p>';
         else {
           cartItemsEl.innerHTML = cart.map((item, i) =>
-            `<div class="cart-item"><span class="cart-item-name">${item.name}</span><span class="cart-item-price">${fmt(item.price)}</span><button class="cart-item-remove" data-remove="${i}" aria-label="Quitar ${item.name}">✕</button></div>`
+            '<div class="cart-item"><span class="cart-item-name">' + item.name + '</span><span class="cart-item-price">' + fmt(item.price) + '</span><button class="cart-item-remove" data-remove="' + i + '" aria-label="Quitar ' + item.name + '">✕</button></div>'
           ).join('');
-          cartItemsEl.querySelectorAll('[data-remove]').forEach(btn => btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            cart.splice(parseInt(btn.getAttribute('data-remove'), 10), 1);
-            save(); render();
-          }));
         }
         const total = calcTotal();
         cartTotalEl.textContent = fmt(total);
         cartPointsEl.textContent = calcPoints(total) + ' pts';
         cartPointsAvailEl.textContent = pointsHistory.toFixed(0) + ' pts';
       }
-      function save() { localStorage.setItem('pahe_cart', JSON.stringify(cart)); }
+      function save() { try { localStorage.setItem('pahe_cart', JSON.stringify(cart)); } catch (e) { } }
 
-      document.querySelectorAll('[data-add-to-cart]').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+      // Event delegation para añadir al carrito (funciona con clones también)
+      document.addEventListener('click', (e) => {
+        const addBtn = e.target.closest('.btn-add-cart');
+        if (addBtn) {
           e.preventDefault();
-          const card = btn.closest('.route-card');
+          const card = addBtn.closest('.route-card');
+          if (!card) return;
           const id = card.getAttribute('data-route-id');
           const name = card.getAttribute('data-route-name');
           const price = parseInt(card.getAttribute('data-route-price'), 10);
-          if (cart.find(i => i.id === id)) {
-            btn.classList.remove('added');
-            btn.textContent = '+ Añadir a mi paquete';
-            cart.splice(cart.findIndex(i => i.id === id), 1);
-            save(); render();
-            return;
+          if (!id || !name || !price) return;
+          const existing = cart.findIndex(i => i.id === id);
+          if (existing !== -1) {
+            cart.splice(existing, 1);
+            addBtn.classList.remove('added');
+            addBtn.textContent = '+ Añadir a mi paquete';
+          } else {
+            cart.push({ id, name, price });
+            addBtn.classList.add('added');
+            addBtn.textContent = '✓ Añadido';
+            spawnSparkles(addBtn, 10);
           }
-          cart.push({ id, name, price });
           save(); render();
-          btn.classList.add('added');
-          btn.textContent = '✓ Añadido';
-          spawnSparkles(btn, 10);
-        });
+          return;
+        }
+        const removeBtn = e.target.closest('[data-remove]');
+        if (removeBtn) {
+          e.preventDefault();
+          cart.splice(parseInt(removeBtn.getAttribute('data-remove'), 10), 1);
+          save(); render();
+        }
       });
 
       cartFloat.addEventListener('click', () => { render(); openModal('modal-cart'); });
-      document.getElementById('cartClear').addEventListener('click', () => {
+
+      const clearBtn = document.getElementById('cartClear');
+      if (clearBtn) clearBtn.addEventListener('click', () => {
         if (!confirm('¿Vaciar tu paquete?')) return;
         cart.length = 0; save(); render();
-        document.querySelectorAll('[data-add-to-cart]').forEach(btn => { btn.classList.remove('added'); btn.textContent = '+ Añadir a mi paquete'; });
+        document.querySelectorAll('.btn-add-cart').forEach(btn => { btn.classList.remove('added'); btn.textContent = '+ Añadir a mi paquete'; });
       });
-      document.getElementById('cartCheckout').addEventListener('click', () => {
+
+      const checkoutBtn = document.getElementById('cartCheckout');
+      if (checkoutBtn) checkoutBtn.addEventListener('click', () => {
+        if (!cart.length) { alert('Tu paquete está vacío.'); return; }
         const total = calcTotal();
         const pts = calcPoints(total);
-        localStorage.setItem('pahe_points_history', (pointsHistory + pts).toString());
+        try { localStorage.setItem('pahe_points_history', (pointsHistory + pts).toString()); } catch (e) { }
+        let msg = 'Hola Pahe Scale, quiero cotizar el siguiente paquete:\n\n';
+        cart.forEach(item => { msg += '• ' + item.name + ': ' + fmt(item.price) + '\n'; });
+        msg += '\nTotal estimado: ' + fmt(total) + '\nPuntos ganados: ' + pts + ' pts\n\nPor favor contáctenme para coordinar.';
+        const url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
         closeModal('modal-cart');
-        setTimeout(() => { document.getElementById('agenda').scrollIntoView({ behavior: 'smooth' }); }, 300);
-        alert(`¡Perfecto! Guardamos tu paquete de ${cart.length} servicio(s) por ${fmt(total)}.\n\nHas sumado ${pts} puntos (total histórico: ${pointsHistory + pts} pts).\n\nCompleta el formulario para que un asesor te contacte.`);
+        const popup = window.open(url, '_blank', 'noopener,noreferrer');
+        if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+          if (cartItemsEl) cartItemsEl.innerHTML = '<p style="text-align:center; padding:20px;"><a href="' + url + '" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:underline;font-weight:700;">Haz clic aquí para abrir WhatsApp</a></p>';
+          return;
+        }
         cart.length = 0; save(); render();
-        document.querySelectorAll('[data-add-to-cart]').forEach(btn => { btn.classList.remove('added'); btn.textContent = '+ Añadir a mi paquete'; });
+        document.querySelectorAll('.btn-add-cart').forEach(btn => { btn.classList.remove('added'); btn.textContent = '+ Añadir a mi paquete'; });
       });
+
       render();
     })();
 
-    /* ============ CHATBOT BLINDADO ============ */
+    /* ============ PRESELECCION DE RUTA ============ */
+    document.addEventListener('click', (e) => {
+      const cta = e.target.closest('[data-service]');
+      if (!cta) return;
+      const service = cta.getAttribute('data-service');
+      if (service) try { sessionStorage.setItem('preselected_service', service); } catch (err) { }
+    });
+
+    /* ============ FORMULARIO → WHATSAPP ============ */
+    (function () {
+      const form = document.getElementById('leadForm');
+      const toggleLink = document.getElementById('toggleChatLink');
+      const chatOption = document.getElementById('chat-option');
+      if (toggleLink && chatOption) {
+        toggleLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const isHidden = chatOption.style.display === 'none' || getComputedStyle(chatOption).display === 'none';
+          chatOption.style.display = isHidden ? 'block' : 'none';
+          if (isHidden) chatOption.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+      if (!form) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(form));
+        if (data.website) return;
+        // Validación con feedback visual
+        let invalid = false;
+        form.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
+        if (!data.name) { document.getElementById('lead-name').classList.add('invalid'); invalid = true; }
+        if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { document.getElementById('lead-email').classList.add('invalid'); invalid = true; }
+        if (!data.company) { document.getElementById('lead-company').classList.add('invalid'); invalid = true; }
+        if (!data.need) { document.getElementById('lead-need').classList.add('invalid'); invalid = true; }
+        const consent = document.getElementById('formConsent');
+        if (!consent.checked) { consent.parentElement.classList.add('highlighted'); invalid = true; }
+        else consent.parentElement.classList.remove('highlighted');
+        if (invalid) return;
+        const needLabels = {
+          impulsa: '✨ Impulsa — Marca personal',
+          estudio: '🎨 Estudio — Web de autor',
+          despega: '🚀 Despega — PyME',
+          crece: '📈 Crece — Mediana',
+          escala: '🏆 Escala — Grande',
+          aprende: '🎓 Aprende — Formación con IA',
+          other: 'Otro / Aún no lo sé'
+        };
+        const msg = 'Hola Pahe Scale, quiero agendar un diagnóstico gratuito.\n\n' +
+          '*Nombre:* ' + data.name + '\n' +
+          '*Correo:* ' + data.email + '\n' +
+          '*Empresa / Marca:* ' + data.company + '\n' +
+          '*Ruta de interés:* ' + (needLabels[data.need] || data.need) + '\n\n' +
+          'Quedo atento a su contacto. ¡Gracias!';
+        const url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+        const popup = window.open(url, '_blank', 'noopener,noreferrer');
+        if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+          form.innerHTML = '<p class="form-success">✅ Tus datos están listos. <a href="' + url + '" target="_blank" rel="noopener noreferrer">Haz clic aquí para abrir WhatsApp</a>.</p>';
+          return;
+        }
+        form.innerHTML = '<p class="form-success">✅ Abriendo WhatsApp con tus datos… Si no se abre, escríbenos a <a href="mailto:pahe.scale@gmail.com">pahe.scale@gmail.com</a>.</p>';
+      });
+    })();
+
+    /* ============ CHATBOT → WHATSAPP ============ */
     (function initChatbot() {
       const startChatBtn = document.getElementById('startChatBtn');
       const contactStart = document.getElementById('contactStart');
@@ -3209,21 +3429,12 @@
       const chatInput = document.getElementById('chatInput');
       const chatSend = document.getElementById('chatSend');
       const chatConsentBox = document.getElementById('chatConsentBox');
+      if (!startChatBtn || !contactStart || !chatContainer || !chatWindow) return;
 
-      if (!startChatBtn || !contactStart || !chatContainer || !chatWindow) {
-        console.warn('[Chatbot] Faltan elementos del DOM.');
-        return;
-      }
+      const chatState = { step: 'greeting', data: { name: '', email: '', context: '', rawMessage: '' } };
+      let chatStartTime = null, timerInterval = null;
 
-      const WA_NUMBER = '573112581129';
-      const WA_BASE = 'https://wa.me/' + WA_NUMBER + '?text=';
-      const waLink = (msg) => WA_BASE + encodeURIComponent(msg);
-
-      const chatState = { step: 'greeting', data: { name: '', email: '', context: '' } };
-      let chatStartTime = null;
-      let timerInterval = null;
-
-      function scrollBottom() { if (chatWindow) chatWindow.scrollTop = chatWindow.scrollHeight; }
+      function scrollBottom() { chatWindow.scrollTop = chatWindow.scrollHeight; }
       function sanitize(s) { const d = document.createElement('div'); d.innerText = s; return d.innerHTML; }
 
       function startChatTimer() {
@@ -3232,18 +3443,12 @@
         timerInterval = setInterval(() => {
           if (!chatStartTime) return;
           const remaining = 20 * 60 * 1000 - (Date.now() - chatStartTime);
-          if (remaining <= 0) {
-            chatTimerEl.textContent = '⏱ Oferta expirada';
-            chatTimerEl.style.background = 'rgba(192,57,43,0.3)';
-            clearInterval(timerInterval);
-            return;
-          }
+          if (remaining <= 0) { chatTimerEl.textContent = '⏱ Oferta expirada'; clearInterval(timerInterval); return; }
           const m = Math.floor(remaining / 60000);
           const s = Math.floor((remaining % 60000) / 1000);
           chatTimerEl.textContent = '⏱ ' + m + ':' + s.toString().padStart(2, '0');
         }, 1000);
       }
-
       function discountStillValid() { return chatStartTime && (Date.now() - chatStartTime) < 20 * 60 * 1000; }
 
       async function addBotMessage(html, delay = 650, type = '') {
@@ -3263,7 +3468,6 @@
         chatWindow.appendChild(msg);
         scrollBottom();
       }
-
       function addUserMessage(text) {
         const msg = document.createElement('div');
         msg.className = 'chat-message user';
@@ -3271,7 +3475,6 @@
         chatWindow.appendChild(msg);
         scrollBottom();
       }
-
       function setOptions(options) {
         const old = document.getElementById('chat-options-container');
         if (old) old.remove();
@@ -3283,7 +3486,7 @@
           b.type = 'button';
           b.className = 'chat-btn';
           b.innerHTML = o.label;
-          b.onclick = () => { c.remove(); addUserMessage(o.label); try { o.action(); } catch (e) { console.error('[Chatbot]', e); } };
+          b.onclick = () => { c.remove(); addUserMessage(o.label); try { o.action(); } catch (err) { console.error('[Chatbot]', err); } };
           c.appendChild(b);
         });
         chatWindow.appendChild(c);
@@ -3332,26 +3535,22 @@
         await addBotMessage("⏱ <strong>30 min/sesión</strong> · desde <strong>$200K COP/clase</strong>");
         await closeWithOptions('aprende');
       }
-
       async function closeWithOptions(route) {
         if (discountStillValid()) {
           const remaining = Math.floor((20 * 60 * 1000 - (Date.now() - chatStartTime)) / 60000);
-          await addBotMessage(`🎁 <strong>¡Aún tienes tu descuento del 5% activo!</strong> Te quedan ~${remaining} min.`, 500, 'discount');
+          await addBotMessage('🎁 <strong>¡Aún tienes tu descuento del 5% activo!</strong> Te quedan ~' + remaining + ' min.', 500, 'discount');
         }
         await addBotMessage("¿Cómo prefieres continuar?");
         setOptions([
-          { label: "📅 Agendar diagnóstico ahora", action: () => askName() },
-          { label: "💬 Prefiero WhatsApp", action: () => offerWhatsApp(route) },
+          { label: "📅 Enviar por WhatsApp ahora", action: () => askName() },
           { label: "❓ Tengo una duda", action: () => enableFreeChat() }
         ]);
       }
-
       async function enableFreeChat() {
         chatState.step = 'free';
-        await addBotMessage("¡Claro! Cuéntame, ¿qué tienes en mente?");
-        if (chatInput) chatInput.placeholder = "Escribe tu pregunta...";
+        await addBotMessage("¡Claro! Cuéntame con tus propias palabras qué necesitas. Estoy aquí para orientarte.");
+        if (chatInput) chatInput.placeholder = "Ej: quiero que mi restaurante tenga una web elegante...";
       }
-
       async function askName() {
         chatState.step = 'name';
         if (chatConsentBox) {
@@ -3360,40 +3559,55 @@
           const cb = document.getElementById('chatConsent');
           if (cb && cb.parentElement) cb.parentElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-        await addBotMessage("¡Perfecto! Para agendar tu diagnóstico y aplicar el descuento, necesitamos tus datos.");
+        await addBotMessage("¡Perfecto! Para enviar tu consulta por WhatsApp y aplicar el descuento, necesitamos tus datos.");
         await addBotMessage("⚠️ <strong>Importante:</strong> marca la casilla resaltada abajo (Ley 1581) para continuar.");
         await addBotMessage("Escribe tu <strong>Nombre Completo</strong>:");
         if (chatInput) chatInput.placeholder = "Ej: Juan Pérez";
       }
-
       async function askEmail() {
         chatState.step = 'email';
-        await addBotMessage(`Gracias, <strong>${sanitize(chatState.data.name.split(' ')[0])}</strong>.`);
+        await addBotMessage('Gracias, <strong>' + sanitize(chatState.data.name.split(' ')[0]) + '</strong>.');
         await addBotMessage("Ahora tu <strong>correo electrónico</strong>:");
         if (chatInput) chatInput.placeholder = "tucorreo@ejemplo.com";
       }
-
-      async function offerWhatsApp(route) {
-        chatState.step = 'handoff_wa';
-        const names = { impulsa: 'Impulsa', estudio: 'Estudio', despega: 'Despega', crece: 'Crece', escala: 'Escala', aprende: 'Aprende' };
-        const reason = route ? `Hola, vengo del asistente virtual. Me interesa la ruta ${names[route] || route}. Quiero aprovechar el 5%.` : 'Hola, vengo del asistente virtual. Quiero información.';
-        await addBotMessage("¡Claro! Hablemos por WhatsApp. Un asesor te responde en minutos:");
-        await addBotMessage(`<a href="${waLink(reason)}" target="_blank" rel="noopener" style="background:var(--wa); color:#fff; padding:12px 20px; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; font-weight:bold; margin-top:8px;">💬 Hablar por WhatsApp ahora</a>`);
+      async function finalizeContact() {
+        const d = chatState.data;
+        chatState.step = 'sending';
+        await addBotMessage("Generando tu mensaje de WhatsApp…");
+        const hasDiscount = discountStillValid();
+        const needLabels = {
+          impulsa: '✨ Impulsa — Marca personal',
+          estudio: '🎨 Estudio — Web de autor',
+          despega: '🚀 Despega — PyME',
+          crece: '📈 Crece — Mediana',
+          escala: '🏆 Escala — Grande',
+          aprende: '🎓 Aprende — Formación con IA',
+          general: 'Consulta general'
+        };
+        let msg = 'Hola Pahe Scale, vengo del asistente virtual.\n\n';
+        msg += '*Nombre:* ' + d.name + '\n';
+        msg += '*Correo:* ' + d.email + '\n';
+        msg += '*Ruta de interés:* ' + (needLabels[d.context] || d.context || 'No especificada') + '\n';
+        if (d.rawMessage) msg += '*Consulta:* ' + d.rawMessage + '\n';
+        if (hasDiscount) msg += '\n🎁 Aplicar descuento del 5% por solicitud dentro de los primeros 20 minutos.';
+        msg += '\n\nQuedo atento a su contacto. ¡Gracias!';
+        const url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+        await addBotMessage('✅ Listo. <a href="' + url + '" target="_blank" rel="noopener noreferrer" style="color:var(--wa);font-weight:bold;text-decoration:underline;">Haz clic aquí para enviar tu consulta por WhatsApp</a>.');
+        if (hasDiscount) await addBotMessage("🎉 <strong>¡Descuento del 5% aplicado!</strong>", 500, 'discount');
+        chatState.step = 'handoff';
+        window.open(url, '_blank', 'noopener,noreferrer');
       }
-
       async function handleFreeMessage(text) {
         const t = text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
+        chatState.data.rawMessage = text;
         if (/(precio|cuesta|cuanto|tarifa|cotiza|inversion)/i.test(t)) {
           await addBotMessage("Buena pregunta. Tenemos 6 rutas:");
-          await addBotMessage("🎨 <strong>Estudio</strong> (web de autor): desde <strong>$300K</strong><br>✨ <strong>Impulsa</strong> (marca personal): desde <strong>$800K</strong><br>🎓 <strong>Aprende</strong> (formación IA): desde <strong>$200K/clase</strong><br>🚀 <strong>Despega</strong> (PyME): desde <strong>$1.5M</strong><br>📈 <strong>Crece</strong> (mediana): desde <strong>$4.5M</strong><br>🏆 <strong>Escala</strong> (grande): desde <strong>$15M</strong>");
+          await addBotMessage("🎨 <strong>Estudio</strong>: desde <strong>$300K</strong><br>✨ <strong>Impulsa</strong>: desde <strong>$800K</strong><br>🎓 <strong>Aprende</strong>: desde <strong>$200K/clase</strong><br>🚀 <strong>Despega</strong>: desde <strong>$1.5M</strong><br>📈 <strong>Crece</strong>: desde <strong>$4.5M</strong><br>🏆 <strong>Escala</strong>: desde <strong>$15M</strong>");
           if (discountStillValid()) await addBotMessage("🎁 Y recuerda: tienes 5% de descuento activo.", 500, 'discount');
           return addBotMessage("¿Cuál se parece más a tu caso?");
         }
-        if (/(humano|asesor|persona|hablar|contacto|reunion|agendar|llamar)/i.test(t) && !chatState.data.context) return offerWhatsApp();
         if (/(web de autor|restaurante|hotel|boutique|marca cultural|diseno|elegante|historia|premium)/i.test(t)) return recommendEstudio();
         if (/(aprender|formacion|curso|clase|ensen|ia|chatgpt|hacer mi web|crear mi web|mejorar mi web)/i.test(t)) return recommendAprende();
-
         if (/(vender|ventas|aumentar|mas clientes|facturar|crecer|ingresos)/i.test(t)) {
           await addBotMessage("¡Me encanta! Vender más es el objetivo #1 de nuestros clientes.");
           await addBotMessage("Para recomendarte el camino exacto, cuéntame: <strong>¿ya tienes presencia en internet?</strong>");
@@ -3437,26 +3651,23 @@
             { label: "🎓 Formación IA", action: () => recommendAprende() }
           ]);
         }
-        if (/(hola|buenas|hey|que tal|saludos)/i.test(t)) return addBotMessage("¡Hola! 👋 ¿Qué quieres resolver?");
+        if (/(hola|buenas|hey|que tal|saludos)/i.test(t)) return addBotMessage("¡Hola! 👋 ¿Qué quieres resolver hoy?");
         if (/(inicio|volver|menu|reset)/i.test(t)) return startChat();
-
-        await addBotMessage("Interesante. Cuéntame un poco más:");
+        await addBotMessage("Entiendo. Para darte la mejor orientación, un asesor puede revisar tu caso en detalle. ¿Te parece si enviamos tu consulta por WhatsApp?");
         setOptions([
-          { label: "📈 Quiero vender más", action: () => handleFreeMessage("Quiero vender más") },
-          { label: "🎨 Necesito web de autor", action: () => handleFreeMessage("Necesito web de autor") },
-          { label: "🎓 Aprender con IA", action: () => handleFreeMessage("Quiero aprender con IA") },
-          { label: "💬 Hablar con asesor", action: () => offerWhatsApp() }
+          { label: "📅 Sí, enviar por WhatsApp", action: () => askName() },
+          { label: "🔄 Volver al inicio", action: () => startChat() }
         ]);
       }
-
       async function startChat() {
         chatState.step = 'greeting';
         chatState.data.context = '';
+        chatState.data.rawMessage = '';
         chatWindow.innerHTML = '';
         await addBotMessage("¡Hola! Soy el asistente de <strong>Pahe Scale</strong>. 👋");
         await addBotMessage("Tengo <strong>dos cosas importantes</strong> para ti:<br><br>1️⃣ Te ayudo a encontrar la ruta exacta que necesitas.<br>2️⃣ Tienes un <strong>descuento sorpresa del 5%</strong> si solicitas tu diagnóstico en los próximos 20 minutos.");
         await addBotMessage("(Puedes ver el contador arriba. ⏱)");
-        await addBotMessage("Para empezar: <strong>¿qué quieres lograr en los próximos 3 meses?</strong>");
+        await addBotMessage("Para empezar: <strong>¿qué quieres lograr en los próximos 3 meses?</strong> O si prefieres, cuéntamelo con tus propias palabras.");
         setOptions([
           { label: "📈 Quiero vender más", action: () => handleFreeMessage("Quiero vender más") },
           { label: "🎨 Necesito una web única", action: () => handleFreeMessage("Necesito web de autor") },
@@ -3464,7 +3675,6 @@
           { label: "💬 Otra consulta", action: () => enableFreeChat() }
         ]);
       }
-
       async function handleSend() {
         if (!chatInput) return;
         const v = chatInput.value.trim();
@@ -3472,7 +3682,6 @@
         addUserMessage(v);
         chatInput.value = '';
         chatInput.placeholder = "Escribe tu mensaje...";
-
         switch (chatState.step) {
           case 'name': {
             const consent = document.getElementById('chatConsent');
@@ -3498,29 +3707,6 @@
             await handleFreeMessage(v);
         }
       }
-
-      async function finalizeContact() {
-        const d = chatState.data;
-        chatState.step = 'sending';
-        await addBotMessage("Registrando tus datos…");
-        const hasDiscount = discountStillValid();
-        try {
-          const res = await fetch('/api/lead', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: d.name, email: d.email, company: '', need: d.context || 'General', source: 'chat', consent: true, discount: hasDiscount ? '5%' : 'none' })
-          });
-          if (!res.ok) throw new Error('network');
-          await addBotMessage(`✅ Listo. Un asesor te escribirá a <strong>${sanitize(d.email)}</strong> en menos de 24h hábiles.`);
-          if (hasDiscount) await addBotMessage("🎉 <strong>¡Descuento del 5% aplicado!</strong>", 500, 'discount');
-          chatState.step = 'handoff';
-        } catch (err) {
-          await addBotMessage("No pudimos registrar automáticamente. Escríbenos a <strong>pahe.scale@gmail.com</strong>.");
-          chatState.step = 'handoff';
-        }
-      }
-
-      // Listeners
       startChatBtn.addEventListener('click', () => {
         if (contactStart) contactStart.style.display = 'none';
         chatContainer.style.display = 'flex';
@@ -3528,7 +3714,6 @@
         startChatTimer();
         startChat();
       });
-
       if (chatInput) {
         chatInput.addEventListener('focus', () => setTimeout(scrollBottom, 300));
         chatInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') { e.preventDefault(); handleSend(); } });
@@ -3536,48 +3721,7 @@
       if (chatSend) chatSend.addEventListener('click', handleSend);
     })();
 
-    /* ============ TOGGLE CHAT + FORM SUBMIT ============ */
-    (function initContact() {
-      const form = document.getElementById('leadForm');
-      const toggleLink = document.getElementById('toggleChatLink');
-      const chatOption = document.getElementById('chat-option');
-
-      if (toggleLink && chatOption) {
-        toggleLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          const isHidden = chatOption.style.display === 'none' || getComputedStyle(chatOption).display === 'none';
-          chatOption.style.display = isHidden ? 'block' : 'none';
-          if (isHidden) chatOption.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      }
-
-      if (form) {
-        form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          const data = Object.fromEntries(new FormData(form));
-          if (data.website) { form.innerHTML = '<p class="form-success">✅ Listo.</p>'; return; }
-          const btn = form.querySelector('button[type="submit"]');
-          const orig = btn.textContent;
-          btn.disabled = true;
-          btn.textContent = 'Enviando…';
-          try {
-            const res = await fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
-            if (!res.ok) throw new Error();
-            form.innerHTML = '<p class="form-success">✅ Listo, ' + (data.name || '').split(' ')[0] + '. Te contactamos en menos de 24h hábiles.</p>';
-          } catch (err) {
-            btn.disabled = false;
-            btn.textContent = orig;
-            alert('Error de red. Escríbenos a pahe.scale@gmail.com');
-          }
-        });
-        const pre = sessionStorage.getItem('preselected_service');
-        if (pre) { const s = document.getElementById('lead-need'); if (s) s.value = pre; sessionStorage.removeItem('preselected_service'); }
-      }
-    })();
-  </script>
-
-  <script>
+    /* ============ MATRIX ============ */
     (function () {
       const c = document.getElementById('navMatrix');
       if (!c) return;
@@ -3589,7 +3733,7 @@
       let cols = [], t = null, run = false;
       function pal() { const d = document.documentElement.getAttribute('data-theme') === 'dark'; return { f: d ? 'rgba(10,14,26,0.10)' : 'rgba(247,242,234,0.10)', rgb: d ? '100,255,218' : '9,49,141' }; }
       function rs() { const dpr = window.devicePixelRatio || 1; c.width = nav.offsetWidth * dpr; c.height = nav.offsetHeight * dpr; c.style.width = nav.offsetWidth + 'px'; c.style.height = nav.offsetHeight + 'px'; ctx.scale(dpr, dpr); const n = Math.floor(nav.offsetWidth / FS); cols = new Array(n).fill(0).map(() => Math.random() * -50); }
-      function draw() { const w = nav.offsetWidth, h = nav.offsetHeight; const { f, rgb } = pal(); ctx.fillStyle = f; ctx.fillRect(0, 0, w, h); ctx.font = `600 ${FS}px 'JetBrains Mono',monospace`; ctx.textBaseline = 'top'; for (let i = 0; i < cols.length; i++) { const ch = Math.random() > 0.5 ? '1' : '0'; ctx.fillStyle = `rgba(${rgb},${0.15 + Math.random() * 0.35})`; ctx.fillText(ch, i * FS, cols[i] * FS); if (cols[i] * FS > h && Math.random() > 0.965) cols[i] = 0; cols[i] += 0.55 + Math.random() * 0.4; } }
+      function draw() { const w = nav.offsetWidth, h = nav.offsetHeight; const { f, rgb } = pal(); ctx.fillStyle = f; ctx.fillRect(0, 0, w, h); ctx.font = '600 ' + FS + 'px "JetBrains Mono",monospace'; ctx.textBaseline = 'top'; for (let i = 0; i < cols.length; i++) { const ch = Math.random() > 0.5 ? '1' : '0'; ctx.fillStyle = 'rgba(' + rgb + ',' + (0.15 + Math.random() * 0.35) + ')'; ctx.fillText(ch, i * FS, cols[i] * FS); if (cols[i] * FS > h && Math.random() > 0.965) cols[i] = 0; cols[i] += 0.55 + Math.random() * 0.4; } }
       function loop() { if (!run) return; draw(); t = setTimeout(loop, 70); }
       function start() { if (run) return; run = true; const { f } = pal(); ctx.fillStyle = f; ctx.fillRect(0, 0, nav.offsetWidth, nav.offsetHeight); loop(); }
       function stop() { run = false; if (t) { clearTimeout(t); t = null; } }

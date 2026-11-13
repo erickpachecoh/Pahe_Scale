@@ -1,21 +1,92 @@
-# Robots.txt para Pahe Scale
+# ============================================================
+# ROBOTS.TXT — pahescale.netlify.app
+# Última actualización: 13 de noviembre 2026
+# ============================================================
+
+# Permitir a todos los rastreadores generales
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /.netlify/
 
-# Permitir explícitamente a los bots de Inteligencia Artificial
+# ============================================================
+# PERMITIR EXPLÍCITAMENTE A LOS BOTS DE INTELIGENCIA ARTIFICIAL
+# ============================================================
+
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Allow: /
 
+# Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini / SGE
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+# Microsoft Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ByteDance / TikTok / Doubao
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (alimenta a muchos LLMs)
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Amazon / Alexa
+User-agent: Amazonbot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Phind
+User-agent: PhindBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# ============================================================
+# SITEMAP
+# ============================================================
 Sitemap: https://pahescale.netlify.app/sitemap.xml
