@@ -3,24 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pahescale.netlify.app/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pahescale.netlify.app/Pahe_Scale.png</image:loc>
-      <image:title>Pahe Scale — Soluciones tecnológicas para PyMEs y empresas en LATAM</image:title>
+      <image:title>Pahe Scale — Agencia tecnológica de tarjetas NFC, web, automatización, datos e IA</image:title>
+      <image:caption>Pahe Scale — Soluciones tecnológicas para PyMEs, marcas y empresas en LATAM, Norteamérica y Europa</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://pahescale.netlify.app/#soluciones</loc>
-    <lastmod>2026-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pahescale.netlify.app/#contacto</loc>
-    <lastmod>2026-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
