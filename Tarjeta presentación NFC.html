@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es-CO" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Pahe Scale · Tarjeta NFC</title>
+    <meta name="description"
+        content="Pahe Scale: Hacemos que tu negocio venda más y trabaje mejor. Soluciones para PyMEs, grandes empresas y marcas personales.">
+
+    <link rel="canonical" href="https://pahescale.netlify.app/NFC_presentacion.html">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/Favicons/site.webmanifest">
+    <link rel="shortcut icon" href="/Favicons/favicon.ico">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pahescale.netlify.app/NFC_presentacion.html">
+    <meta property="og:title" content="Pahe Scale · Tarjeta NFC">
+    <meta property="og:description"
+        content="Hacemos que tu negocio venda más y trabaje mejor. Soluciones para PyMEs, grandes empresas y marcas personales.">
+    <meta property="og:image" content="https://pahescale.netlify.app/Pahe_Scale.png">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- THEME COLOR -->
+    <meta name="theme-color" content="#F7F2EA" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            /* Paleta Exacta de Pahe Scale (Modo Claro) */
+            --bg-base: #F7F2EA;
+            --bg-grad: rgba(238, 210, 226, 0.55);
+            --surface: #FFFDF8;
+            --surface-2: #EFE7DB;
+            --border: #EED2E2;
+            --text: #09318D;
+            --text-strong: #06256B;
+            --muted: #4A6CB3;
+            --accent: #09318D;
+            --accent-2: #EED2E2;
+            --accent-contrast: #F7F2EA;
+            --wa: #25D366;
+            --shadow: 0 10px 30px rgba(238, 210, 226, 0.5), 0 4px 12px rgba(9, 49, 141, 0.06);
+
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+            --font-serif: 'Playfair Display', Georgia, serif;
+        }
+
+        :root[data-theme="dark"] {
+            --bg-base: #0A0E1A;
+            --bg-grad: rgba(100, 255, 218, 0.06);
+            --surface: #111726;
+            --surface-2: #1A2233;
+            --border: #253048;
+            --text: #E6EDF7;
+            --text-strong: #FFFFFF;
+            --muted: #8892A6;
+            --accent: #64FFDA;
+            --accent-2: #4FC3F7;
+            --accent-contrast: #0A0E1A;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                border-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-base);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Halos animados (Identidad Pahe Scale) */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            width: 60vw;
+            height: 60vw;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: orb 18s infinite alternate ease-in-out;
+        }
+
+        body::before {
+            background: var(--bg-grad);
+            top: -20%;
+            right: -10%;
+        }
+
+        body::after {
+            background: var(--accent-2);
+            bottom: -20%;
+            left: -10%;
+            animation-delay: -9s;
+        }
+
+        @keyframes orb {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(-50px, 50px) scale(1.2);
+            }
+        }
+
+        /* MAIN CARD */
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+            background: linear-gradient(160deg, var(--surface) 0%, var(--surface-2) 100%);
+            border-radius: 22px;
+            padding: 36px 26px 28px;
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            box-shadow: var(--shadow), 0 30px 60px rgba(9, 49, 141, 0.08);
+            border: 1px solid var(--border);
+            animation: rise 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+            transform: translateY(28px);
+            z-index: 1;
+        }
+
+        @keyframes rise {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 14px;
+            border: 2px solid var(--accent);
+            border-radius: 14px;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.25;
+        }
+
+        /* BLOQUE A: NFC Pulse */
+        .nfc-pulse {
+            position: absolute;
+            top: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 44px;
+            height: 44px;
+            background: radial-gradient(circle, var(--accent-2) 0%, var(--accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid var(--surface);
+            z-index: 2;
+            animation: nfcPulse 2.2s infinite;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nfc-pulse svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: var(--surface);
+            stroke-width: 2.5;
+            stroke-linecap: round;
+        }
+
+        @keyframes nfcPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(9, 49, 141, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(9, 49, 141, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(9, 49, 141, 0);
+            }
+        }
+
+        /* BLOQUE B: Toggle Tema */
+        .theme-toggle {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--surface);
+            border: 1px solid var(--accent-2);
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .theme-toggle svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        [data-theme="light"] .icon-moon {
+            display: block;
+        }
+
+        [data-theme="light"] .icon-sun {
+            display: none;
+        }
+
+        [data-theme="dark"] .icon-moon {
+            display: none;
+        }
+
+        [data-theme="dark"] .icon-sun {
+            display: block;
+        }
+
+        /* BLOQUE C: Logo Circular con Slime (Más pequeño) */
+        .logo-slime-wrap {
+            position: relative;
+            width: 110px;
+            /* Reducido de 150px a 110px */
+            height: 110px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-slime-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--accent-2) 0%, var(--surface-2) 100%);
+            border-radius: 50%;
+            animation: liquidMorph 8s ease-in-out infinite alternate;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 10px 20px rgba(9, 49, 141, 0.15);
+            z-index: 0;
+        }
+
+        @keyframes liquidMorph {
+            0% {
+                border-radius: 50%;
+                transform: scale(1) rotate(0deg);
+            }
+
+            33% {
+                border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+                transform: scale(1.05) rotate(5deg);
+            }
+
+            66% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                transform: scale(0.95) rotate(-5deg);
+            }
+
+            100% {
+                border-radius: 50%;
+                transform: scale(1.02) rotate(0deg);
+            }
+        }
+
+        .logo-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--surface);
+            padding: 8px;
+            /* Ajustado proporcionalmente */
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        /* BLOQUE D: Identidad */
+        .identity {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            background: var(--accent-2);
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        h1.name {
+            font-family: var(--font-mono);
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            color: var(--text-strong);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text);
+            margin-bottom: 12px;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
+
+        .tagline {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 290px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* BLOQUE E: Sígueme */
+        .follow-label {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .follow-label::before,
+        .follow-label::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .follow-label::before {
+            margin-right: 12px;
+        }
+
+        .follow-label::after {
+            margin-left: 12px;
+        }
+
+        .follow-card {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: var(--surface);
+            margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .follow-card.instagram {
+            background: linear-gradient(135deg, #833AB4, #E1306C 45%, #FD1D1D 75%, #FCB045);
+            box-shadow: 0 8px 25px rgba(225, 48, 108, 0.35);
+        }
+
+        .follow-card.web {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--text-strong) 50%, var(--accent) 100%);
+            box-shadow: 0 8px 25px rgba(9, 49, 141, 0.35);
+            border: 1px solid var(--accent-2);
+        }
+
+        .follow-icon-box {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 14px;
+            backdrop-filter: blur(4px);
+        }
+
+        .follow-icon-box svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: var(--surface);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .follow-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .follow-text strong {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .follow-text span {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            opacity: 0.85;
+            letter-spacing: 0.05em;
+        }
+
+        .arrow {
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .follow-card:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        .follow-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-25deg);
+            background-position: -100% 0;
+            background-repeat: no-repeat;
+            transition: background-position 0.6s;
+            pointer-events: none;
+        }
+
+        .follow-card:hover::after {
+            background-position: 200% 0;
+        }
+
+        /* BLOQUE F: WhatsApp y utilidades */
+        .btn-wa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--wa), #128C7E);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 14px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid var(--accent-2);
+            cursor: pointer;
+        }
+
+        .btn-wa:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+        }
+
+        .btn-wa svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #FFFFFF;
+        }
+
+        .util-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .btn-ghost {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 12px 8px;
+            border-radius: 10px;
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .btn-ghost:hover {
+            background: var(--accent-2);
+            border-color: var(--accent);
+        }
+
+        .btn-ghost svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--text);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .foot {
+            text-align: center;
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.85rem;
+            color: var(--muted);
+            padding-top: 16px;
+            border-top: 1px dashed var(--border);
+        }
+
+        /* TOAST */
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--text-strong);
+            color: var(--surface);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 600;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+            box-shadow: var(--shadow);
+            z-index: 100;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        #toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        button:focus-visible,
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                padding: 32px 20px 24px;
+            }
+
+            h1.name {
+                font-size: 1.32rem;
+            }
+
+            .logo-slime-wrap {
+                width: 90px;
+                height: 90px;
+            }
+
+            .follow-card {
+                padding: 12px;
+            }
+
+            .btn-ghost {
+                font-size: 0.54rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card" role="region" aria-label="Tarjeta de presentación digital">
+
+        <!-- NFC Pulse -->
+        <div class="nfc-pulse" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+                <path d="M6 18a8 8 0 0 1 0-12M10 15a4 4 0 0 1 0-6M14 13a1 1 0 0 1 0-2"></path>
+            </svg>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <svg class="icon-moon" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4" />
+                <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+        </button>
+
+        <!-- Logo Circular con Slime -->
+        <div class="logo-slime-wrap">
+            <div class="logo-container">
+                <img src="Pahe_Scale.png" alt="Pahe Scale Logo">
+            </div>
+        </div>
+
+        <!-- Identidad -->
+        <div class="identity">
+            <div class="eyebrow">Web · WhatsApp · NFC · IA</div>
+            <h1 class="name">Pahe Scale</h1>
+            <div class="role">Soluciones para PyMEs, Grandes Empresas y Marcas Personales</div>
+            <div class="tagline">Hacemos que tu negocio venda más y trabaje mejor.</div>
+        </div>
+
+        <!-- Sígueme -->
+        <div class="follow-label">Sígueme y descubre</div>
+
+        <a href="https://www.instagram.com/pahe_scale?utm_source=nfc&utm_medium=card" target="_blank"
+            rel="noopener noreferrer" class="follow-card instagram">
+            <div class="follow-icon-box">
+                <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+            </div>
+            <div class="follow-text">
+                <strong>@pahe_scale</strong>
+                <span>Instagram · Sígueme</span>
+            </div>
+            <div class="arrow">→</div>
+        </a>
+
+        <a href="https://pahescale.netlify.app?utm_source=nfc&utm_medium=card" target="_blank" rel="noopener noreferrer"
+            class="follow-card web">
+            <div class="follow-icon-box">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+            </div>
+            <div class="follow-text">
+                <strong>pahescale.netlify.app</strong>
+                <span>Conoce las 7 rutas</span>
+            </div>
+            <div class="arrow">→</div>
+        </a>
+
+        <!-- WhatsApp (Contacto) -->
+        <a href="https://wa.me/573112581129?text=Hola,%20acabo%20de%20ver%20tu%20tarjeta%20NFC%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank" rel="noopener noreferrer" class="btn-wa">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Contactar por WhatsApp
+        </a>
+
+        <!-- Utilidades -->
+        <div class="util-grid">
+            <button class="btn-ghost" id="btnVCard" aria-label="Guardar contacto">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+                    <polyline points="17 21 17 13 7 13 7 21" />
+                    <polyline points="7 3 7 8 15 8" />
+                </svg>
+                Guardar
+            </button>
+            <button class="btn-ghost" id="btnShare" aria-label="Compartir tarjeta">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                Compartir
+            </button>
+            <a href="tel:+573112581129" class="btn-ghost" aria-label="Llamar">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Llamar
+            </a>
+        </div>
+
+        <div class="foot">"¿Tienes alguna idea para tu marca, negocio o tema personal pero no sabes como implementarla?
+            En Pahe Scale la traemos a la realidad, contáctanos."</div>
+
+    </main>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+        // Theme Logic
+        const root = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const THEME_KEY = 'pahe-nfc-theme';
+
+        function initTheme() {
+            try {
+                const saved = localStorage.getItem(THEME_KEY);
+                if (saved === 'light' || saved === 'dark') {
+                    root.setAttribute('data-theme', saved);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    root.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) { }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            try {
+                const current = root.getAttribute('data-theme') || 'light';
+                const next = current === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem(THEME_KEY, next);
+            } catch (e) { }
+        });
+
+        initTheme();
+
+        // Toast Logic
+        let toastTimeout;
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2600);
+        }
+
+        // VCard Download
+        const btnVCard = document.getElementById('btnVCard');
+        btnVCard.addEventListener('click', () => {
+            try {
+                const vcard = "BEGIN:VCARD\r\n" +
+                    "VERSION:3.0\r\n" +
+                    "FN:Pahe Scale\r\n" +
+                    "ORG:Pahe Scale\r\n" +
+                    "TITLE:Soluciones Tech B2B y Marca Personal\r\n" +
+                    "TEL;TYPE=WORK,VOICE:+573112581129\r\n" +
+                    "URL:https://pahescale.netlify.app\r\n" +
+                    "X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/pahe_scale\r\n" +
+                    "ADR;TYPE=WORK:;;Bogotá;Cundinamarca;;Colombia\r\n" +
+                    "NOTE:Vende más y trabaja mejor. Soluciones para PyMEs, empresas y marcas.\r\n" +
+                    "END:VCARD\r\n";
+
+                const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'PaheScale.vcf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showToast('Contacto guardado');
+            } catch (e) {
+                showToast('Error al guardar contacto');
+            }
+        });
+
+        // Share Logic
+        const btnShare = document.getElementById('btnShare');
+        btnShare.addEventListener('click', async () => {
+            const shareData = {
+                title: 'Pahe Scale',
+                text: 'Pahe Scale: Vende más y trabaja mejor. Soluciones tech.',
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    await navigator.clipboard.writeText(shareData.url);
+                    showToast('Enlace copiado al portapapeles');
+                }
+            } catch (err) {
+                try {
+                    await navigator.clipboard.writeText(shareData.url);
+                    showToast('Enlace copiado al portapapeles');
+                } catch (e) {
+                    showToast('No se pudo compartir');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
