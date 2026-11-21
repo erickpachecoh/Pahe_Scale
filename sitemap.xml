@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://pahescale.netlify.app/</loc>
+    <loc>https://pahescale.com/</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://pahescale.netlify.app/Pahe_Scale.png</image:loc>
+      <image:loc>https://pahescale.com/Pahe_Scale.png</image:loc>
       <image:title>Pahe Scale — Agencia tecnológica de tarjetas NFC, web, automatización, datos e IA</image:title>
       <image:caption>Pahe Scale — Soluciones tecnológicas para PyMEs, marcas y empresas en LATAM, Norteamérica y Europa</image:caption>
     </image:image>

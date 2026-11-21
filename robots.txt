@@ -1,5 +1,5 @@
 # ============================================================
-# ROBOTS.TXT — pahescale.netlify.app
+# ROBOTS.TXT — pahescale.com
 # Última actualización: 13 de noviembre 2026
 # ============================================================
 
@@ -89,4 +89,4 @@ Allow: /
 # ============================================================
 # SITEMAP
 # ============================================================
-Sitemap: https://pahescale.netlify.app/sitemap.xml
+Sitemap: https://pahescale.com/sitemap.xml
