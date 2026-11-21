@@ -13,6 +13,13 @@
   to = "/.netlify/functions/verify-recaptcha"
   status = 200
 
+# Redirección 301: Migración del subdominio de Netlify al dominio .com
+[[redirects]]
+  from = "https://pahescale.netlify.app/*"
+  to = "https://pahescale.com/:splat"
+  status = 301
+  force = true
+
 # Headers de seguridad recomendados
 [[headers]]
   for = "/*"
